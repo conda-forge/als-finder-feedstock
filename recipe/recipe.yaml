@@ -1,7 +1,7 @@
 schema_version: 1
 
 context:
-  version: 1.2.2
+  version: 1.2.3
 
 package:
   name: als-finder
@@ -9,7 +9,7 @@ package:
 
 source:
   url: https://github.com/cms-2024-hudak/als-finder/archive/refs/tags/v${{ version }}.tar.gz
-  sha256: f8ef35909be2494b0a6ed4b8ebb96d265c0b8a15551a467cfc3a368b7c58ca2d
+  sha256: 18c265fe77bf395dd8acfb9b83d5cb2470e16e6aeca0a1013d5b507b463ec189
 
 build:
   noarch: python
@@ -38,8 +38,7 @@ requirements:
     - pyproj
     - tqdm
     - pyogrio
-    - pdal
-    - python-pdal
+    - libpdal-core
     - pystac
     - stac-validator
     - psutil
